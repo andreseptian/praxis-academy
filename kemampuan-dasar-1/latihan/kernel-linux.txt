@@ -1,0 +1,2 @@
+ii  linux-image-5.4.0-42-generic               5.4.0-42.46                           amd64        Signed kernel image generic
+ii  linux-image-generic-hwe-20.04              5.4.0.42.46                           amd64        Generic Linux kernel image

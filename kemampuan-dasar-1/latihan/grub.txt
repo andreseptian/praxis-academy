@@ -1,0 +1,8 @@
+Terdapat Versi GNU GRUB ver. 2.04
+Kemudian terdapat 4 pilihan yaitu:
+1. Ubuntu, untuk masuk ke OS Ubuntu
+2. Advance option for Ubuntu
+3. Windows Boot Manager, untuk masuk ke OS Windows
+4. UEFI Firmware Settings
+
+dan dibagian bawah terdapat navigasi terkait GRUB tersebut

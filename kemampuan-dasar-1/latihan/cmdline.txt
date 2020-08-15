@@ -1,0 +1,124 @@
+Guru99 & E-guide:
+1. ls (menampilkan daftar file di direktori tersebut)
+andre@andre-X450JB:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+2. ls -R (menampilakn semua file di direktori maupun subdirektori)
+andre@andre-X450JB:~$ ls -R
+.:
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+
+./Desktop:
+git-linux  praxis-academy
+
+./Desktop/git-linux:
+
+./Desktop/praxis-academy:
+kemampuan-dasar-1
+
+./Desktop/praxis-academy/kemampuan-dasar-1:
+kasus  latihan
+
+./Desktop/praxis-academy/kemampuan-dasar-1/kasus:
+cari-java.sh  coba.java
+
+./Desktop/praxis-academy/kemampuan-dasar-1/latihan:
+cmdline.txt  env.txt  grub.txt  kernel-linux.txt
+
+./Documents:
+
+./Downloads:
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./snap:
+code  snap-store  sublime-text
+
+./snap/code:
+40  common  current
+
+./snap/code/40:
+
+./snap/code/common:
+
+./snap/snap-store:
+467  common  current
+
+./snap/snap-store/467:
+
+./snap/snap-store/common:
+
+./snap/sublime-text:
+85  common  current
+
+./snap/sublime-text/85:
+
+./snap/sublime-text/common:
+
+./Templates:
+
+./Videos:
+
+3. ls -al (memberikan informasi rinci terkait file)
+andre@andre-X450JB:~$ ls -al
+total 92
+drwxr-xr-x 18 andre andre 4096 Agu 14 23:07 .
+drwxr-xr-x  3 root  root  4096 Agu 14 20:56 ..
+-rw-------  1 andre andre 1662 Agu 14 23:31 .bash_history
+-rw-r--r--  1 andre andre  220 Agu 14 20:56 .bash_logout
+-rw-r--r--  1 andre andre 3771 Agu 14 20:56 .bashrc
+drwx------ 17 andre andre 4096 Agu 14 23:31 .cache
+drwx------ 17 andre andre 4096 Agu 14 23:31 .config
+drwxr-xr-x  4 andre andre 4096 Agu 14 23:12 Desktop
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Documents
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Downloads
+-rw-rw-r--  1 andre andre   73 Agu 14 23:07 .gitconfig
+drwx------  3 andre andre 4096 Agu 14 21:12 .gnupg
+drwx------  3 andre andre 4096 Agu 15 04:12 .local
+drwx------  5 andre andre 4096 Agu 14 21:15 .mozilla
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Music
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Pictures
+drwx------  3 andre andre 4096 Agu 14 22:52 .pki
+-rw-r--r--  1 andre andre  807 Agu 14 20:56 .profile
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Public
+drwxr-xr-x  5 andre andre 4096 Agu 14 22:52 snap
+-rw-r--r--  1 andre andre    0 Agu 14 23:00 .sudo_as_admin_successful
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Templates
+drwxr-xr-x  2 andre andre 4096 Agu 14 21:12 Videos
+drwxrwxr-x  3 andre andre 4096 Agu 14 22:52 .vscode
+
+4. ls -a (menampilkan file tersembunyi)
+andre@andre-X450JB:~$ ls -a
+.              .cache     .gitconfig  Pictures  .sudo_as_admin_successful
+..             .config    .gnupg      .pki      Templates
+.bash_history  Desktop    .local      .profile  Videos
+.bash_logout   Documents  .mozilla    Public    .vscode
+.bashrc        Downloads  Music       snap
+
+5. cat >namafile (membuat file baru)
+6. nano namafile (edit file tersebut)
+7. rm namafile (menghapus file tersebut)
+8. mv namafile lokasi_baru (memindahkan file contoh mv fileku /home/desktop/)
+9. mkdir namadirektori (membuat direktoribaru)
+10. rmdir namadirektori (menghapus direktori)
+11. sudo apt-get update (memperbarui paket yang di install)
+andre@andre-X450JB:~$ sudo apt-get update
+[sudo] password for andre: 
+Hit:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]   
+Hit:3 http://id.archive.ubuntu.com/ubuntu focal InRelease
+Get:4 http://id.archive.ubuntu.com/ubuntu focal-updates InRelease [111 kB]
+Get:5 http://id.archive.ubuntu.com/ubuntu focal-backports InRelease [98,3 kB]
+Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24,3 kB]
+Get:7 http://id.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [197 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [42,1 kB]
+Get:9 http://id.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [177 kB]
+Get:10 http://id.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 48x48 Icons [92,2 kB]
+Get:11 http://id.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2.468 B]
+Get:12 http://id.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1.972 B]
+Fetched 853 kB in 4s (202 kB/s)                
+Reading package lists... Done
+

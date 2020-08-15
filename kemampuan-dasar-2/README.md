@@ -1,0 +1,14 @@
+praxis-academy
+Swiper.jsSlider2
+ManajemenSurat_ci
+zerosicks
+ContactUsForm
+BoxShadowEffects
+ButtonNeon
+backgroundClip
+portofolio
+keuangan
+absenqr_ci
+idcard
+templating_ci
+tutorial_ci
