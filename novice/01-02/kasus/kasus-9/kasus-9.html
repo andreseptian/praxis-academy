@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasus 9</title>
+</head>
+
+<body>
+    <h1>Three digit armstrong numbers</h1>
+</body>
+<script>
+    function three_digit_armstrong_number() {
+        for (var i = 1; i < 10; ++i) {
+            for (var j = 0; j < 10; ++j) {
+                for (var k = 0; k < 10; ++k) {
+                    var pow = (Math.pow(i, 3) + Math.pow(j, 3) + Math.pow(k, 3));
+                    var plus = (i * 100 + j * 10 + k);
+                    if (pow == plus) {
+                        console.log(pow);
+                    }
+                }
+            }
+        }
+    }
+    three_digit_armstrong_number();
+</script>
+
+</html>

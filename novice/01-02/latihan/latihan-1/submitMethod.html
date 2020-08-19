@@ -1,0 +1,27 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Form object/submit method example</TITLE>
+</HEAD>
+<SCRIPT>
+    var dataOK = false
+
+    function checkData() {
+        if (document.form1.threeChar.value.length == 3) {
+            document.form1.submit()
+        } else {
+            alert("Enter exactly three characters. " + document.form1.threeChar.value + " is not valid.")
+            return false
+        }
+    }
+</SCRIPT>
+
+<BODY>
+    <FORM NAME="form1" onSubmit="alert('Form is being submitted.')">
+        <B>Enter 3 characters:</B>
+        <INPUT TYPE="text" NAME="threeChar" SIZE=3>
+        <P><INPUT TYPE="button" VALUE="Done" NAME="button1" onClick="checkData()">
+    </FORM>
+</BODY>
+
+</HTML>

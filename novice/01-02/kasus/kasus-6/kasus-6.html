@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasus 6</title>
+</head>
+
+<body>
+    <h1>Compute the average marks and grade</h1>
+</body>
+<script>
+    var students = [
+        ['Andre', 76],
+        ['Black', 63],
+        ['Moy', 99],
+        ['Septian', 90],
+        ['Njago', 87]
+    ];
+
+    var Avgmarks = 0;
+
+    for (var i = 0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+        var avg = (Avgmarks / students.length);
+    }
+
+    console.log("Average grade: " + (Avgmarks) / students.length);
+
+    if (avg < 60) {
+        console.log("Grade : F");
+    } else if (avg < 70) {
+        console.log("Grade : D");
+    } else if (avg < 80) {
+        console.log("Grade : C");
+    } else if (avg < 90) {
+        console.log("Grade : B");
+    } else if (avg < 100) {
+        console.log("Grade : A");
+    }
+</script>
+
+</html>

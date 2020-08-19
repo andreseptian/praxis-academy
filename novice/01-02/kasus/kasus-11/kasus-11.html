@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasus 11</title>
+</head>
+
+<body>
+    <h1>compute the greatest common divisor (GCD) of two positive integers</h1>
+</body>
+<script>
+    var a = 2154; //First number
+    var b = 458; //Second number 
+    var gcd;
+    while (a != b) {
+        if (a > b) {
+            a = a - b;
+        } else {
+            b = b - a;
+        }
+    }
+    gcd = a;
+    console.log(gcd);
+</script>
+
+</html>
