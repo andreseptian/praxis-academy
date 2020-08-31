@@ -1,0 +1,127 @@
+SQL diikuti oleh seperangkat aturan dan pedoman unik yang disebut Sintaks. Tutorial ini memberi Anda awal yang cepat dengan SQL dengan mendaftar semua Sintaks SQL dasar.
+
+Semua pernyataan SQL dimulai dengan salah satu kata kunci seperti SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, USE, SHOW dan semua pernyataan diakhiri dengan titik koma (;).
+
+Hal terpenting yang perlu diperhatikan di sini adalah bahwa SQL bersifat case insensitive, yang berarti SELECT dan select memiliki arti yang sama dalam pernyataan SQL. Padahal, MySQL membuat perbedaan nama tabel. Jadi, jika Anda bekerja dengan MySQL, Anda perlu memberi nama tabel seperti yang ada di database.
+
+Berbagai Sintaks dalam SQL
+Semua contoh yang diberikan dalam tutorial ini telah diuji dengan server MySQL.
+1 Pernyataan SQL SELECT
+SELECT column1, column2....columnN
+FROM   table_name;
+
+2 Klausul DISTINCT SQL
+SELECT DISTINCT column1, column2....columnN
+FROM   table_name;
+
+3 Klausul SQL WHERE
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION;
+
+4 SQL DAN / ATAU Klausul
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION-1 {AND|OR} CONDITION-2;
+
+5 Klausul SQL IN
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name IN (val-1, val-2,...val-N);
+
+6 Klausul SQL ANTARA
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name BETWEEN val-1 AND val-2;
+
+7 Klausa SEPERTI SQL
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name LIKE { PATTERN };
+
+8 SQL ORDER BY Clause
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  CONDITION
+ORDER BY column_name {ASC|DESC};
+
+9 SQL GROUP BY Klausul
+SELECT SUM(column_name)
+FROM   table_name
+WHERE  CONDITION
+GROUP BY column_name;
+
+10 SQL COUNT Clause
+SELECT COUNT(column_name)
+FROM   table_name
+WHERE  CONDITION;
+
+11 Klausul SQL HAVING
+SELECT SUM(column_name)
+FROM   table_name
+WHERE  CONDITION
+GROUP BY column_name
+HAVING (arithematic function condition);
+
+12 Pernyataan SQL CREATE TABLE
+CREATE TABLE table_name(
+column1 datatype,
+column2 datatype,
+column3 datatype,
+.....
+columnN datatype,
+PRIMARY KEY( one or more columns )
+);
+
+13 Pernyataan SQL DROP TABLE
+DROP TABLE table_name;
+
+14 Pernyataan SQL CREATE INDEX
+CREATE UNIQUE INDEX index_name
+ON table_name ( column1, column2,...columnN);
+
+15 Pernyataan SQL DROP INDEX
+ALTER TABLE table_name
+DROP INDEX index_name;
+
+16 Pernyataan SQL DESC
+DESC table_name;
+
+17 Pernyataan SQL TRUNCATE TABLE
+TRUNCATE TABLE table_name;
+
+18 Pernyataan SQL ALTER TABLE
+ALTER TABLE table_name {ADD|DROP|MODIFY} column_name {data_ype};
+
+19 Pernyataan SQL ALTER TABLE (Ganti Nama)
+ALTER TABLE table_name RENAME TO new_table_name;
+
+20 Pernyataan SQL INSERT INTO
+INSERT INTO table_name( column1, column2....columnN)
+VALUES ( value1, value2....valueN);
+
+21 Pernyataan SQL UPDATE
+UPDATE table_name
+SET column1 = value1, column2 = value2....columnN=valueN
+[ WHERE  CONDITION ];
+
+22 Pernyataan SQL DELETE
+DELETE FROM table_name
+WHERE  {CONDITION};
+
+23 Pernyataan SQL CREATE DATABASE
+CREATE DATABASE database_name;
+
+24 Pernyataan SQL DROP DATABASE
+DROP DATABASE database_name;
+
+25 Pernyataan Penggunaan SQL
+USE database_name;
+
+26 Pernyataan SQL COMMIT
+COMMIT;
+
+26 Pernyataan SQL ROLLBACK
+ROLLBACK;
+
+https://www.tutorialspoint.com/sql/sql-syntax.htm
